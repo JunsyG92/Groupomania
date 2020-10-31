@@ -87,9 +87,16 @@ import jwt from "jsonwebtoken";
         color: white !important;
         height: 50px;
         transition-duration: 200ms;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 20px !important;
+    }
+    @media screen and (max-width: 1278px) {
+        .update__identity{
+            padding: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
     }
     .bg-modal__identity .ui.modal{
         background-color: rgb(0, 130, 255) !important;
