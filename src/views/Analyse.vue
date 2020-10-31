@@ -1,6 +1,17 @@
 <template>
 <div class="container-fluid py-5" style="min-height: 100vh">
     <div class="row">
+        <div class="col-md-10 d-flex mx-auto py-5">
+            <div class="mr-5">
+                <i class="exclamation triangle icon yellow display-1"></i>
+            </div>
+            <div class="content-warning">
+                <h2 class="display-4 text-white">Avertissement :</h2>
+                <p>Le projet d'analyse de code est en construction et ne sera donc pas finalisé pour la soutenance mais pour le passage finale face au jury</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-3">
             <div class="accordion" id="topLevel">
                 <div class="card bg-transparent border-0">
