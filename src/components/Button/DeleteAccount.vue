@@ -72,9 +72,16 @@ import jwt from "jsonwebtoken";
         color: white !important;
         height: 50px;
         transition-duration: 200ms;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 20px !important;
+    }
+    @media screen and (max-width: 1278px) {
+        .delete__account{
+            padding: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
     }
     .bg-modal__delete .ui.modal{
         background-color: #ff3743 !important;

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <sui-button @click="toggleModalPassword" class="update__identity">Modifier votre mot de passe</sui-button>
-        <sui-modal v-model="open" class="bg-modal__identity">
+        <sui-button @click="toggleModalPassword" class="update__password">Modifier votre mot de passe</sui-button>
+        <sui-modal v-model="open" class="bg-modal__password">
 
             <div class="post-center py-5 text-center w-75 mx-auto">
                 <i class="key icon display-1"></i>
@@ -65,7 +65,7 @@ import jwt from "jsonwebtoken";
 </script>
 
 <style lang="scss">
-    .update__identity{
+    .update__password{
         background-color: rgb(0, 150, 255) !important;
         border: none !important;
         width: 250px;
@@ -74,11 +74,18 @@ import jwt from "jsonwebtoken";
         color: white !important;
         height: 50px;
         transition-duration: 200ms;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 20px !important;
     }
-    .bg-modal__identity .ui.modal{
+    @media screen and (max-width: 1278px) {
+        .update__password{
+            padding: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    .bg-modal__password .ui.modal{
         background-color: rgb(0, 130, 255) !important;
         color: white;
     }
